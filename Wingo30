@@ -1,0 +1,369 @@
+<!DOCTYPE html><html lang="en" translate="no" style="font-size: 37.5px;"><head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="screen-orientation" content="portrait">
+<meta name="full-screen" content="yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="browsermode" content="application">
+<meta name="x5-fullscreen" content="true">
+<meta name="x5-orientation" content="portrait">
+<meta name="x5-page-mode" content="app">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+<meta name="apple-mobile-web-app-title" content="Welcome">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta content="email=no" name="format-detection">
+<title>lucknow</title>
+<link rel="icon" href="images/d78f681075c06fcdd1c093d3ffb856f4.png">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
+<style>
+    .mobileSelect .content .btnBar .ensure {
+        width: auto;
+    }
+    .chatroom-overlay {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        touch-action: none;
+        max-width: 500px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+</style>
+
+<script src="js/lang.js"></script>
+<script> setLanguage('en_us')</script>
+<script>
+    var imgCdn = "https://in.piccdn123.com";
+    var fontTemplate = "_template_/red";
+    var copy_succ = "Copy successful";
+    var please_stay_tuned = "Please stay tuned";
+    var sever_error_500 = "Internal Server Error: 500, please contact customer service for assistance";
+    var request_timed_out = "Request timed out, please check your network";
+    var request_failed = "Request failed";
+</script>
+  <link rel="stylesheet" type="text/css" href="css/page-login.css">
+</head>
+<body style="font-size: 12px;">
+
+  <div id="app">
+    
+
+    <div class="login__container">
+
+    
+
+      <div class="van-nav-bar van-hairline--bottom">
+              
+        <a href="javascript:history.go(-1)" class="van-nav-bar__left">
+          
+            <i class="van-icon van-icon-arrow-left van-nav-bar__arrow">
+              
+            </i>
+          
+        </a>
+        
+        <div class="van-nav-bar__title van-ellipsis">
+          <div>
+           Login          </div>
+        </div>
+        <div class="van-nav-bar__right">
+          <div class="top-right">
+
+            <div class="cut_language">
+              <div class="language">
+                <input type="hidden" id="ck_language" value="ck_1088_language">
+                <input type="hidden" id="current_language" value="en_us">
+                <img src="images/area0.png">
+                <span>English</span>
+                <i></i>
+              </div>
+            </div>
+          </div>	
+        </div>
+      </div>
+
+
+
+      <div class="login__container-heading">
+        <h1 class="login__container-heading__title">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Login</font>
+          </font>
+        </h1>
+        <div class="login__container-heading__subTitle">
+          <div>
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">Please log in using your phone number or email</font>
+            </font>
+          </div>
+          <div>
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">If you forget your password, please contact customer service.</font>
+            </font>
+          </div>
+        </div>
+      </div>
+
+      <div class="login_container-tab">
+                  <div class="tab  active " data-tab="phone">
+            <div class="phonebg"></div>
+            <div class="font30 phonefont30active">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Login in with phone</font>
+              </font>
+            </div>
+          </div>
+                  <div class="tab " data-tab="email">
+            <div class="emialbg"></div>
+            <div class="font30">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Email / Account</font>
+              </font>
+            </div>
+          </div>
+              </div>
+
+
+      <div class="login__container-form">
+        <div class="tab-content activecontent">
+          <div class="signIn__container">
+
+                        <div class="phoneInput__container" id="input_phone" style="display: none">
+              <div class="phoneInput__container-label">
+                <img src="images/mobile.png" class="phoneInput__container-label__icon">
+                <span>
+                  <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Phone number</font>
+                  </font>
+                </span>
+              </div>
+              <div class="phoneInput__container-input">
+                <div class="dropdown">
+                  <div class="dropdown__value">
+                    <span>
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">+91</font>
+                      </font>
+                    </span>
+                    <i class="van-badge__wrapper van-icon van-icon-arrow-down"></i>
+                  </div>
+                </div>
+                <input type="text" name="phone" id="phone" placeholder="Please enter the phone number">
+              </div>
+              <div class="phoneInput__container-tips" style="display: none;">
+                <font style="vertical-align: inherit; ">Phone number format is incorrect</font>
+              </div>
+
+            </div>
+                        <div class="emailinput__container" id="input_email" style="display: none">
+              <div class="emailinput__container-label">
+                <img src="images/emailnumber.png" class="emailinput__container-label__icon">
+                <span>
+                    <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">Email / Account</font>
+                    </font>
+                  </span>
+              </div>
+              <div class="emailinput__container-input">
+                <input type="text" name="email" id="email" maxlength="250" placeholder="Please enter your email address">
+              </div>
+              <div class="phoneInput__container-tips" style="display: none;">
+                <font style="vertical-align: inherit; ">Please enter your account number</font>
+              </div>
+            </div>
+            
+            <div class="passwordInput__container">
+              <div class="passwordInput__container-label">
+                <img class="passwordInput__container-label__icon" src="images/pwd.png">
+                <span>
+                  <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Password</font>
+                  </font>
+                </span>
+              </div>
+              <div class="passwordInput__container-input">
+                <input type="password" id="password" placeholder="Please enter your password" maxlength="32" name="password">
+                <img src="images/hide.png" class="eye">
+              </div>
+              <div class="phoneInput__container-tips" style="display: none;">
+                <font style="vertical-align: inherit; ">Please enter your password</font>
+              </div>
+            </div>
+
+            <div class="passwordInput__container">
+              <div class="passwordInput__container-label">
+                  <img class="passwordInput__container-label__icon" src="images/foget.png">
+                  <span>
+                      <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Verification code</font>
+                      </font>
+                  </span>
+              </div>
+
+              <div class="verifyInput__container-input">
+                  <input type="number" id="verify_code" placeholder="Verification code" maxlength="6" name="verify_code" oninput="if(value.length>4)value=value.slice(0,4)">
+                  <img src="getImg" alt="" class="VerificationCode" style="height: 44px;position: absolute;right: 0;border-radius: 0.26667rem">
+              </div>
+              <div class="phoneInput__container-tips" style="display: none;">
+                <font style="vertical-align: inherit; ">Please enter the verification code</font>
+              </div>
+            </div>
+          
+            <div>
+              <div role="checkbox" class="van-checkbox" tabindex="0" aria-checked="false">
+                <div class="van-checkbox__icon van-checkbox__icon--round">
+                  <i class="van-badge__wrapper van-icon van-icon-success">
+                    <input type="checkbox" class="savedPassword" style="width: 16px;height: 16px;">
+                  </i>
+                </div>
+                <span class="van-checkbox__label">
+                  <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Remember password</font>
+                  </font>
+                </span>
+              </div>
+            </div>
+            <div class="signIn__container-button">
+              <button class="submit active">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Login</font>
+                </font>
+              </button>
+              <a href="/register" class="register">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Register</font>
+                </font>
+              </a>
+            </div>
+            <div class="signIn_footer">
+
+                            <a href="/customerService" class="forgetcon">
+              
+                <div class="forgetbg"></div>
+                <div class="font24">
+                  <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Forget Password?</font>
+                  </font>
+                </div>
+              
+              </a>
+              
+              <div class="customcon">
+                <a href="/customerService">
+                  <div class="custombg"></div>
+                  <div class="font24">
+                    <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">CSKH 24/7</font>
+                    </font>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- switch language start -->
+    <div class="nav-group-language">
+    <ul class="">
+            <li class="action" data-language="en_us">
+      <div class="left"><img src="images/area0.png"> <span>English</span></div>
+      <i></i>
+      </li>
+            <li data-language="hi_in">
+      <div class="left"><img src="images/area5.png"> <span>हिंदी</span></div>
+      <i></i>
+      </li>
+          </ul>
+  </div>
+  
+	<div class="empty__container template_empty_content" style="display: none">
+    <img alt="" src="images/empty.png">
+    <p> No data </p>
+</div>
+
+<div class="infiniteScroll__loading template_no_more" style="display: none; justify-content: center; box-shadow: none;min-height:auto">
+    <div>No more</div>
+</div>
+
+<div class="no-data-text" style="display: none">No data</div>
+
+<div class="swal-overlay" id="confirm_dialog" style="display: none">
+    <div class="swal-modal">
+        <div class="swal-icon swal-icon--warning">
+          <span class="swal-icon--warning__body">
+              <span class="swal-icon--warning__dot"></span>
+          </span>
+        </div>
+        <div class="swal-text" style=""></div>
+        <div class="swal-footer">
+            <div class="swal-button-container">
+                <button class="swal-button swal-button--confirm">Confirm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="van-dialog Warning" style="z-index: 9999; display: none;" id="common_confirm_dialog2">
+
+    <div class="van-dialog__header">Warning</div>
+
+    <div class="van-dialog__content">
+        <div class="van-dialog__message van-dialog__message--has-title">Are you sure to delete this message?</div>
+    </div>
+
+    <div class="van-hairline--top van-dialog__footer">
+        <button type="button" class="van-button van-button--large van-dialog__cancel">
+            <div class="van-button__content">
+
+                <span class="van-button__text">Cancel</span>
+
+            </div>
+        </button>
+
+        <button type="button" class="van-button van-button--large van-dialog__confirm van-hairline--left">
+            <div class="van-button__content">
+
+                <span class="van-button__text">Confirm</span>
+
+            </div>
+        </button>
+    </div>
+
+</div>
+
+<div class="van-overlay" style="z-index: 2001; display: none;"></div>
+
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script src="js/jquery.cookie-1.4.1.min.js"></script>
+<script src="js/my-common.js"></script>
+<script src="js/customer_service_drag.js"></script>
+<script src="js/lazyload.min.js"></script>
+
+<script>
+    let _cancelBtnText = "Cancel";
+    let _confirmBtnText = "Confirm";
+    let _allText = "All";
+</script>
+  <script src="js/login.js"></script>
+
+</body></html>
