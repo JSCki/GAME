@@ -1,0 +1,662 @@
+<html lang="en" translate="no"><head>
+  <link rel="stylesheet" type="text/css" href="css/turntable.css">
+  <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="screen-orientation" content="portrait">
+<meta name="full-screen" content="yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="browsermode" content="application">
+<meta name="x5-fullscreen" content="true">
+<meta name="x5-orientation" content="portrait">
+<meta name="x5-page-mode" content="app">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+<meta name="apple-mobile-web-app-title" content="Welcome">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta content="email=no" name="format-detection">
+<title>lucknow</title>
+<link rel="icon" href="images/d78f681075c06fcdd1c093d3ffb856f4.png">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
+<style>
+    .mobileSelect .content .btnBar .ensure {
+        width: auto;
+    }
+    .chatroom-overlay {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        touch-action: none;
+        max-width: 500px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+</style>
+
+<script src="js/lang.js"></script>
+<script> setLanguage('en_us')</script>
+<script>
+    var imgCdn = "https://in.piccdn123.com";
+    var fontTemplate = "_template_/red";
+    var copy_succ = "Copy successful";
+    var please_stay_tuned = "Please stay tuned";
+    var sever_error_500 = "Internal Server Error: 500, please contact customer service for assistance";
+    var request_timed_out = "Request timed out, please check your network";
+    var request_failed = "Request failed";
+</script>
+  <link rel="stylesheet" href="css/page-home.css">
+</head>
+
+<body>
+
+<div id="app">
+
+  <input type="hidden" id="current_country" value="India">
+  <input type="hidden" id="currency_symbol" value="₹">
+  <input type="hidden" id="is_login" value="0">
+  <div class="content_home">
+
+    <!-- top nav -->
+    <div class="van-nav-bar van-hairline--bottom">
+
+      <a href="javascript:history.go(-1)" class="van-nav-bar__left">
+                <img src="images/a7d3717c1af7621f38a98cafc02a23dc.png" class="logo">
+              </a>
+
+      <div class="van-nav-bar__right">
+        <div class="van-right_notice">
+          <a href="/userMessage">
+            <span class="message_icon"></span>
+          </a>
+                  </div>
+
+        
+      </div>
+    </div>
+
+
+    <!-- banner start -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/35403fe9a35d7e427ee180dfb0d6d148.jpg" class="slide_image" data-url="javascript:void(0)"></div>
+                <div class="swiper-slide"><img src="images/04b46a148776b60f3dd873aba610b085.jpg" class="slide_image" data-url="/activity/detail?id=5"></div>
+                <div class="swiper-slide"><img src="images/d2f3edc6733a37cd2656ac7f7f244ab5.png" class="slide_image" data-url="/Wingo30.html"></div>
+                <div class="swiper-slide"><img src="images/67fe89d13a51784e19c62116a566237f.jpg" class="slide_image" data-url="/payment"></div>
+                <div class="swiper-slide"><img src="images/957d3d93eedc938c2376e02009e329ee.png" class="slide_image" data-url="/activity/detail?id=3"></div>
+                <div class="swiper-slide"><img src="images/dee9d95d0f14bf3817b95215372fa138.png" class="slide_image" data-url="https://t.me/LucknowOfficial_Games"></div>
+              </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- banner end -->
+
+
+    <div class="noticeBar__container">
+
+      <img src="images/notice.png">
+
+
+      <div class="scrolling-container">
+        <div class="scrolling-content">
+          <marquee behavior="scroll" direction="left" scrollamount="5">
+                        <p>Welcome to LUCKNOW!
+Where gaming meets earning in an exciting new way.
+Embark on your thrilling journey with LUCKNOW and dive into a world where fun and rewards go hand in hand. Start now to enjoy exclusive bonuses and a unique gaming experience designed just for you.
+We hope you have an amazing time and enjoy every moment!</p>
+                      </marquee>
+        </div>
+      </div>
+
+
+
+      <a href="/announcement">
+        <img src="images/hot_icon.png">Detail      </a>
+
+
+    </div>
+
+
+    <div class="home_menu" id="gamelist">
+      <div class="menu_item action" data-category="LOTTERY" data-anchor="#gamelist">
+        <div class="img_bg"><img class="lottery" src="images/gamecategory_20231215033613klhe.png"></div>
+        <span>Lottery</span>
+      </div>
+      <div class="menu_item" data-category="MINI" data-anchor="#gamelist">
+        <div class="img_bg"><img class="flash" src="images/gamecategory_2023121503353389nc.png"></div>
+        <span>Original</span>
+      </div>
+      <div class="menu_item" data-category="SLOTS" data-anchor="#gamelist">
+        <div class="img_bg"><img class="slot" src="images/gamecategory_202312150336204mtb.png"></div>
+        <span>Slots</span>
+      </div>
+            <div class="menu_item" data-category="SPORT" data-anchor="#gamelist">
+        <div class="img_bg"><img class="sport" src="images/gamecategory_20231215033607yi17.png"></div>
+        <span>Sports</span>
+      </div>
+      
+      <div class="menu_item" data-category="LIVE" data-anchor="#gamelist">
+        <div class="img_bg"><img class="video" src="images/gamecategory_20231215033600k8os.png"></div>
+        <span>Casino</span>
+      </div>
+      <div class="menu_item" data-category="POKER" data-anchor="#gamelist">
+        <div class="img_bg"><img class="chess" src="images/gamecategory_20231215033554mpgb.png"></div>
+        <span>Rummy</span>
+      </div>
+      <div class="menu_item" data-category="FISH" data-anchor="#gamelist">
+        <div class="img_bg"><img class="fish" src="images/gamecategory_20231215033528g3gt.png"></div>
+        <span>Fishing</span>
+      </div>
+
+      <div class="menu_item" data-category="POPULAR" data-anchor="#gamelist">
+        <div class="img_bg"><img class="popular" src="images/gamecategory_202312150336366phx.png"></div>
+        <span>Popular</span>
+      </div>
+    </div>
+
+    <div>
+      <div class="home_container lottery_container" style="display: block">
+        <div class="title" style="background-image: url(images/lottery.png);">Lottery</div>
+        <div class="lottery_container_list">
+
+                    <div class="lotterySlotItem">
+            <a href="/Wingo30.html">
+              <div class="lottery">
+                <img src="images/lottery_bg.png" class="lottery_bg">
+                <img class="lottery_logo" src="images/lotterycategory_wingo.png">
+                <span>Win Go</span>
+                <h4>
+                  <div>Guess Number</div>
+                  <div>Green/Red/Purple</div>
+                </h4>
+              </div>
+              <div class="win_info">
+                <div style="position: relative;">
+                  <div class="win_item">
+                    <div class="left">
+                      <img src="images/15.png" class="win_user_avatar">
+                      <span class="win_username">MemberLRMFGDBK</span>
+                    </div>
+                    <div class="right">Winning amount ₹<span class="win_money">39.20</span></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+                    <div class="lotterySlotItem">
+            <a href="/game?game=30spk10">
+              <div class="lottery">
+                <img src="images/lottery_bg.png" class="lottery_bg">
+                <img class="lottery_logo" src="images/saiche.png">
+                <span>Racing</span>
+                <h4>
+                  <div>Guess Number</div>
+                  <div>Big/Small/Odd/Even</div>
+                </h4>
+              </div>
+              <div class="win_info">
+                <div style="position: relative;">
+                  <div class="win_item">
+                    <div class="left">
+                      <img src="images/15.png" class="win_user_avatar">
+                      <span class="win_username">MemberLRMFGDBK</span>
+                    </div>
+                    <div class="right">Winning amount ₹<span class="win_money">39.20</span></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+                    <div class="lotterySlotItem">
+            <a href="/game?game=trxvngo1">
+              <div class="lottery">
+                <img src="images/lottery_bg.png" class="lottery_bg">
+                <img class="lottery_logo" src="images/lotterycategory_trx.png">
+                <span>Trx Win Go</span>
+                <h4>
+                  <div>Guess Number</div>
+                  <div>Green/Red/Purple</div>
+                </h4>
+              </div>
+              <div class="win_info">
+                <div style="position: relative;">
+                  <div class="win_item">
+                    <div class="left">
+                      <img src="images/15.png" class="win_user_avatar">
+                      <span class="win_username">MemberLRMFGDBK</span>
+                    </div>
+                    <div class="right">Winning amount ₹<span class="win_money">39.20</span></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+                    <div class="lotterySlotItem">
+            <a href="/game?game=30sk3">
+              <div class="lottery">
+                <img src="images/lottery_bg.png" class="lottery_bg">
+                <img class="lottery_logo" src="images/lotterycategory_k3.png">
+                <span>K3</span>
+                <h4>
+                  <div>Guess Number</div>
+                  <div>Big/Small/Odd/Even</div>
+                </h4>
+              </div>
+              <div class="win_info">
+                <div style="position: relative;">
+                  <div class="win_item">
+                    <div class="left">
+                      <img src="images/15.png" class="win_user_avatar">
+                      <span class="win_username">MemberLRMFGDBK</span>
+                    </div>
+                    <div class="right">Winning amount ₹<span class="win_money">39.20</span></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+                    <div class="lotterySlotItem">
+            <a href="/game?game=5d30s">
+              <div class="lottery">
+                <img src="images/lottery_bg.png" class="lottery_bg">
+                <img class="lottery_logo" src="images/lotterycategory_5d.png">
+                <span>5D</span>
+                <h4>
+                  <div>Guess Number</div>
+                  <div>Big/Small/Odd/Even</div>
+                </h4>
+              </div>
+              <div class="win_info">
+                <div style="position: relative;">
+                  <div class="win_item">
+                    <div class="left">
+                      <img src="images/15.png" class="win_user_avatar">
+                      <span class="win_username">MemberLRMFGDBK</span>
+                    </div>
+                    <div class="right">Winning amount ₹<span class="win_money">39.20</span></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="home_container slots_container" style="display: none;">
+        <div class="title" style="background-image: url(images/slot.png)">Slots</div>
+        <div class="other_game slots_container_list">
+        </div>
+      </div>
+
+      <div class="home_container sport_container" style="display: none;">
+        <div class="title" style="background-image: url(images/sport.png)">Sports</div>
+        <div class="other_game sport_container_list">
+        </div>
+      </div>
+
+      <div class="home_container live_container" style="display: none;">
+        <div class="title" style="background-image: url(images/video.png)">Casino</div>
+        <div class="other_game live_container_list">
+        </div>
+      </div>
+
+      <div class="home_container poker_container" style="display: none;">
+        <div class="title" style="background-image: url(images/chess.png)">Rummy</div>
+        <div class="other_game poker_container_list">
+        </div>
+      </div>
+
+      <div class="home_container fish_container" style="display: none;">
+        <div class="title" style="background-image: url(images/fishing.png)">Fishing</div>
+        <div class="flash_game fish_container_list">
+        </div>
+      </div>
+
+      <div class="home_container mini_container" style="display: none;">
+        <div class="title" style="background-image: url(images/flash.png)">Mini Game</div>
+        <div class="flash_game mini_container_list">
+        </div>
+      </div>
+
+      <div class="home_container popular_container" style="display: none;">
+        <div class="title" style="background-image: url(images/popular.png)">Popular</div>
+        <div class="hot_container">
+          <div class="popular">
+            <div class="list popular_container_list">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="luckyWinners__container">
+
+      <h1>Winning infomation</h1>
+
+      <div class="luckyWinners__container-wrapper" id="box">
+        <ul style="position: relative;" id="luckyWinners__ul">
+        </ul>
+      </div>
+
+      <li class="luckyWinners__container-wrapper__item luckyWinners_template" style="display: none">
+        <div class="luckyWinners__container-wrapper__item-img">
+          <img class="avatar" src="">
+        </div>
+        <div class="luckyWinners__container-wrapper__item-info">
+          <h1 class="nickname">Mem***LEU</h1>
+        </div>
+        <img class="gameTypeImg" src="images/WinGo.png">
+        <div class="luckyWinners__container-wrapper__item-winAmount">
+          <h1 class="win_money">320.00</h1>
+          <span>Winning amount</span>
+        </div>
+      </li>
+
+    </div>
+
+
+    <div class="dailyProfitRank">
+      <h1>Today's earnings rank</h1>
+      <div class="dailyProfitRank__content">
+
+
+        <div class="dailyProfitRank__content-topThree">
+          <div class="dailyProfitRank__content-topThree__item" style="order: 2; top: -45px;">
+            <div style="background: url(images/border1.png) center center / 100% 100% no-repeat;">
+              <img src="images/18.png">
+            </div>
+            <div>
+              <img src="images/crown1.png">
+              <img src="images/place1.png">
+            </div>
+            <span>Mem****537</span>
+            <span>₹863,324.00</span>
+          </div>
+          <div class="dailyProfitRank__content-topThree__item" style="order: 1; top: -30px;">
+            <div style="background: url(images/border2.png) center center / 100% 100% no-repeat;">
+              <img src="images/14.png">
+            </div>
+            <div>
+              <img src="images/crown2.png">
+              <img src="images/place2.png">
+            </div>
+            <span>Mem****477</span>
+            <span>₹690,558.00</span>
+          </div>
+          <div class="dailyProfitRank__content-topThree__item" style="order: 3; top: -30px;">
+            <div style="background: url(images/border3.png) center center / 100% 100% no-repeat;">
+              <img src="images/15.png">
+            </div>
+            <div>
+              <img src="images/crown3.png">
+              <img src="images/place3.png">
+            </div>
+            <span>Mem****696</span>
+            <span>₹425,385.00</span>
+          </div>
+        </div>
+
+
+        <div class="dailyProfitRank__content-list">
+          <div class="dailyProfitRank__content-list__item">
+            <span class="left-rank">4</span>
+            <img src="images/5.png">
+            <span class="middle-name">Mem****685</span>
+            <span class="right-box">₹381,729.00</span>
+          </div>
+          <div class="dailyProfitRank__content-list__item">
+            <span class="left-rank">5</span>
+            <img src="images/15.png">
+            <span class="middle-name">Mem****400</span>
+            <span class="right-box">₹341,029.00</span>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-- add to desk -->
+
+        <div class="add_btn">
+
+      <svg class="line" width="1" height="60" viewBox="0 0 1 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0.5" x2="0.5" y2="60" stroke="white"></line>
+      </svg>
+
+      <i class="van-badge__wrapper van-icon van-icon-close close">
+        <img src="images/close_white.png">
+      </i>
+      <img class="icon" src="images/e78739547beefb217e8f550dba1b30ab.png">
+            <div class="text" id="addToDesktop">Add to Desk top</div>
+          </div>
+    
+    <div class="chatroom-overlay" style="z-index: 2001; display: none;"> </div>
+
+    <!-- first recharge award dialog start -->
+        <!-- first recharge award dialog end -->
+
+    <!-- roulette dialog start -->
+        <div class="index-popup" style="display: none;">
+      <div class="spins_wheel">
+        <img src="images/close_white.png" class="close close-popup">
+        <a href="/fissionRoulette/spins" id="spins_wheel_tip">
+          <img src="images/luckyspin.png">
+          <p><span>Share with your friends for large amounts of cash</span></p>
+        </a>
+      </div>
+    </div>
+        <!-- roulette dialog end -->
+
+    <!-- activity dialog start -->
+        <!-- activity dialog end -->
+
+    <!-- announcement dialog start -->
+        <!-- announcement dialog end -->
+
+  </div>
+
+
+
+
+
+<a class="customer" id="draggable" href="/customerService">
+  <img src="images/icon_sevice.png">
+</a>
+
+
+
+<!-- nav bottom start -->
+<div class="nav c-pr">
+  <div class="van-hairline--top-bottom van-tabbar van-tabbar--fixed">
+    <a href="javascript:;" class="van-tabbar-item van-tabbar-item--active">
+      <div class="van-tabbar-item__icon">
+
+      </div>
+      <div class="van-tabbar-item__text">
+        <div>
+          <img src="images/home_cur.png">
+        </div>
+        <span class="name fs">Home</span>
+      </div>
+    </a>
+    <a href="/activity" class="van-tabbar-item">
+      <div class="van-tabbar-item__icon">
+
+      </div>
+      <div class="van-tabbar-item__text">
+        <div>
+          <img src="images/activity_nor.png">
+        </div>
+        <span class="name fs">Promotion</span>
+      </div>
+    </a>
+    <a href="/agent" class="van-tabbar-item">
+      <div class="van-tabbar-item__icon">
+
+      </div>
+      <div class="van-tabbar-item__text">
+        <div class="muan">
+          <img src="images/promotionBg.png" class="img">
+        </div>
+        <span class="name fs">Agent</span>
+      </div>
+    </a>
+
+    <a href="/wallet" class="van-tabbar-item">
+      <div class="van-tabbar-item__icon">
+
+      </div>
+      <div class="van-tabbar-item__text">
+        <div>
+          <img src="images/wallet_nor.png">
+        </div>
+        <span class="name fs">Wallet</span>
+      </div>
+    </a>
+    <a href="/me" class="van-tabbar-item">
+      <div class="van-tabbar-item__icon">
+
+      </div>
+      <div class="van-tabbar-item__text">
+        <div>
+          <img src="images/main_nor.png">
+        </div>
+        <span class="name fs">Me</span>
+      </div>
+    </a>
+  </div>
+</div>
+<!-- nav bottom end -->
+
+
+
+
+<div class="bottomfloat_icon">
+
+        <a href="/fissionRoulette/spins.html"><img src="images/float_turn.gif" class="float_spins_icon"></a>
+  
+</div>
+
+<div class="template_third_game_vendor" style="display: none">
+  <a href="javascript:void(0)"><img class="other_img lazy" src="images/white.gif"></a>
+</div>
+<div class="template_third_game_vendor_sport" style="display: none">
+  <div><img class="other_img lazy" src="images/white.gif"></div>
+</div>
+<div class="template_third_game" style="display: none">
+  <div class="item third_game_item">
+    <img class="gameImg lazy" src="images/white.gif">
+  </div>
+</div>
+<div class="template_popular_game" style="display: none">
+  <div>
+    <div class="item third_game_item">
+      <img class="lazy" src="images/white.gif">
+    </div>
+    <div class="win-odds">
+      <span>odds of winning</span>
+      <span class="game-odds"></span>
+      <div class="win-p" style="width: 89%;"></div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+<div class="empty__container template_empty_content" style="display: none">
+    <img alt="" src="images/empty.png">
+    <p> No data </p>
+</div>
+
+<div class="infiniteScroll__loading template_no_more" style="display: none; justify-content: center; box-shadow: none;min-height:auto">
+    <div>No more</div>
+</div>
+
+<div class="no-data-text" style="display: none">No data</div>
+
+<div class="swal-overlay" id="confirm_dialog" style="display: none">
+    <div class="swal-modal">
+        <div class="swal-icon swal-icon--warning">
+          <span class="swal-icon--warning__body">
+              <span class="swal-icon--warning__dot"></span>
+          </span>
+        </div>
+        <div class="swal-text" style=""></div>
+        <div class="swal-footer">
+            <div class="swal-button-container">
+                <button class="swal-button swal-button--confirm">Confirm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="van-dialog Warning" style="z-index: 9999; display: none;" id="common_confirm_dialog2">
+
+    <div class="van-dialog__header">Warning</div>
+
+    <div class="van-dialog__content">
+        <div class="van-dialog__message van-dialog__message--has-title">Are you sure to delete this message?</div>
+    </div>
+
+    <div class="van-hairline--top van-dialog__footer">
+        <button type="button" class="van-button van-button--large van-dialog__cancel">
+            <div class="van-button__content">
+
+                <span class="van-button__text">Cancel</span>
+
+            </div>
+        </button>
+
+        <button type="button" class="van-button van-button--large van-dialog__confirm van-hairline--left">
+            <div class="van-button__content">
+
+                <span class="van-button__text">Confirm</span>
+
+            </div>
+        </button>
+    </div>
+
+</div>
+
+<div class="van-overlay" style="z-index: 2001; display: none;"></div>
+
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script src="js/jquery.cookie-1.4.1.min.js"></script>
+<script src="js/my-common.js"></script>
+<script src="js/customer_service_drag.js"></script>
+<script src="js/lazyload.min.js"></script>
+
+<script>
+    let _cancelBtnText = "Cancel";
+    let _confirmBtnText = "Confirm";
+    let _allText = "All";
+</script>
+<script src="js/jquery.rotate.js"></script>
+<script>
+  var manifest_id = "b1563a78ec59337587f6ab6397699afc";
+  var manifest_msg = "Creation successful";
+  var text_tips = "Tips";
+  var text_join_game = "Are you sure join the game?";
+  var roulette_prizes = '[{"id":9,"idx":0,"prize_number":1,"award_type":4,"reward_money":"0.00","name":"TRY AGAIN","fullname":"TRY AGAIN","color":"#814FED","fontcolor":"#ffffff","img":"","imgObj":""},{"id":10,"idx":1,"prize_number":2,"award_type":1,"reward_money":"1.00","name":"1.00","fullname":"","color":"#FF76CB","fontcolor":"#ffffff","img":"","imgObj":""},{"id":11,"idx":2,"prize_number":3,"award_type":2,"reward_money":"0.00","name":"RANDOM","fullname":"RANDOM","color":"#814FED","fontcolor":"#ffffff","img":"","imgObj":""},{"id":12,"idx":3,"prize_number":4,"award_type":1,"reward_money":"10.00","name":"10.00","fullname":"","color":"#FF76CB","fontcolor":"#ffffff","img":"","imgObj":""},{"id":13,"idx":4,"prize_number":5,"award_type":3,"reward_money":"0.00","name":"WITHDRAW","fullname":"WITHDRAW","color":"#814FED","fontcolor":"#ffffff","img":"","imgObj":""},{"id":14,"idx":5,"prize_number":6,"award_type":1,"reward_money":"3.00","name":"3.00","fullname":"","color":"#FF76CB","fontcolor":"#ffffff","img":"","imgObj":""},{"id":15,"idx":6,"prize_number":7,"award_type":2,"reward_money":"0.00","name":"RANDOM","fullname":"RANDOM","color":"#814FED","fontcolor":"#ffffff","img":"","imgObj":""},{"id":16,"idx":7,"prize_number":8,"award_type":1,"reward_money":"15.00","name":"15.00","fullname":"","color":"#FF76CB","fontcolor":"#ffffff","img":"","imgObj":""}]';
+</script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/index_common_popup.js"></script>
+
+</body></html>
