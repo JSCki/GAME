@@ -1,0 +1,1 @@
+$(document).ready(function(){var o=$(".index-popup"),e=$(".van-overlay"),c=0;function i(n){n<o.length&&(e.show(),$(o[n]).show())}$(".close-popup").on("click",function(){var n;n=c,$(o[n]).hide(),e.hide(),n+1<o.length&&i(n+1),c++}),i(c)});
